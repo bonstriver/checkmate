@@ -12,8 +12,8 @@ export default function Home() {
         { label: 'Random', value: 'r' },
     ]
 
-    async function startLocalGame(startingPiece) {
-    }
+    // async function startLocalGame(startingPiece) {
+    // }
 
     function handlePlayOnline() {
         setShowModal(true)

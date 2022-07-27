@@ -4,7 +4,7 @@ import './App.css'
 import { useNavigate} from 'react-router-dom'
 
 export function NavBar() {
-    const [click, setClick] = useState(false)
+    const [click] = useState(false)
     const [button, setButton] = useState(true)
 
     const history = useNavigate()
