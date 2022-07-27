@@ -39,9 +39,11 @@ export default function Home() {
         <>
             <div className="columns home">
                 <div className="column has-background-primary home-columns">
-                    <button className="button is-link">
-                        Play Locally
-                    </button>
+                    <a href="https://board-games.vercel.app/">
+                        <button className="button is-link">
+                            Play Locally
+                        </button>
+                    </a>
                 </div>
                 <div className="column has-background-link home-columns">
                     <button className="button is-primary"
