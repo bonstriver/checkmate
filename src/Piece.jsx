@@ -14,7 +14,7 @@ export default function Piece({ piece: { type, color }, position }) {
     <>
       <DragPreviewImage connect={preview} src={pieceImg}/>
       <div className='piece-container' ref={drag} style={{opacity: isDragging ? 0 : 1}}>
-        <img src={pieceImg} alt = '' className='piece'/>
+        <img src={pieceImg} alt = ' ' className='piece'/>
       </div>
     </>
   )
