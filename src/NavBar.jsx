@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './App.css'
-import { useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export function NavBar() {
     const [click] = useState(false)
@@ -31,7 +31,7 @@ export function NavBar() {
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
                         <Link to='/' className='nav-links'>
-                            Checkers (coming soon)
+                            Online Play
                         </Link>
                     </li>
                 </ul>

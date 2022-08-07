@@ -8,6 +8,7 @@ import GameApp from './GameApp'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { auth } from './firebase'
 
+//App*
 export default function App() {
     const [user, loading, error] = useAuthState(auth)
 

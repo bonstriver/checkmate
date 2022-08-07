@@ -5,8 +5,9 @@ import Board from './Board'
 import { useParams, useNavigate } from 'react-router-dom'
 import { db } from './firebase'
 
-function GameApp() {
-  const [board, setBoard] = useState([])
+//GameApp
+function GAMEAPP() {
+  const [board, setBoard] = useState([]
   const [isGameOver, setIsGameOver] = useState()
   const [result, setResult] = useState()
   const [position, setPosition] = useState()
