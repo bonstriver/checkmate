@@ -4,12 +4,11 @@ import { map } from 'rxjs/operators'
 import { auth } from './firebase'
 import { fromRef } from 'rxfire/firestore'
 
-let gameRef
-let member
-
 const chess = new Chess()
 
 export let gameSubject
+let gameRef
+let member
 
 export async function initGame(gameRefFb) {
     const { currentUser } = auth
@@ -95,7 +94,6 @@ export function handleMove(from, to) {
     }
 }
 
-
 export function move(from, to, promotion) {
     let tempMove = { from, to }
     if (promotion) {
@@ -142,6 +140,7 @@ async function updateGame(pendingPromotion, reset) {
 
 
 }
+
 function getGameResult() {
     if (chess.in_checkmate()) {
         const winner = chess.turn() === "w" ? 'BLACK' : 'WHITE'

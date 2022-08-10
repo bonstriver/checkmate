@@ -5,9 +5,8 @@ import Board from './Board'
 import { useParams, useNavigate } from 'react-router-dom'
 import { db } from './firebase'
 
-//GameApp
-function GAMEAPP() {
-  const [board, setBoard] = useState([]
+function GameApp() {
+  const [board, setBoard] = useState([])
   const [isGameOver, setIsGameOver] = useState()
   const [result, setResult] = useState()
   const [position, setPosition] = useState()
@@ -80,7 +79,7 @@ function GAMEAPP() {
       {result && <p className="vertical-text">{result}</p>}
       {status === 'waiting' && (
         <div className="notification is-link share-game">
-          <strong>Share this game to continue</strong>
+          <strong>Share this link to continue</strong>
           <br />
           <br />
           <div className="field has-addons">

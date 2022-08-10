@@ -19,7 +19,7 @@ export default function BoardSquare({
       handleMove(fromPosition, position)
     },
   })
-  useEffect(()=>{
+  useEffect(() => {
     const subscribe = gameSubject.subscribe(
       ({ pendingPromotion }) => 
       pendingPromotion && pendingPromotion.to === position 

@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import BoardSquare from './BoardSquare'
 
 export default function Board({ board, position }) {
@@ -30,7 +30,7 @@ export default function Board({ board, position }) {
 
   function getPosition(i) {
     const { x, y } = getXYPosition(i)
-    const letter = ["a", 'b','c', 'd', 'e', 'f', 'g', 'h'][x]
+    const letter = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'][x]
     return `${letter}${y + 1}` 
   }
   
