@@ -266,6 +266,8 @@ video {
   
   .nav-item {
     height: 80px;
+    display: flex;
+    justify-content: space-between;
   }
   
   .nav-links {

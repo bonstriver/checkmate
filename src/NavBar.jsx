@@ -33,9 +33,12 @@ export function NavBar() {
                         <Link to='/' className='nav-links'>
                             Online Play
                         </Link>
+                        <Link to='/' className='nav-links'>
+                            Local Play
+                        </Link>
                     </li>
                 </ul>
-                {button && <a className='a-btn' onClick={() => history('/game')}>PLAY</a>}
+                {button && <a href='https://board-games.vercel.app/' className='a-btn'>PLAY</a>}
             </div>
         </nav>
     </>
