@@ -27,7 +27,7 @@ export function NavBar() {
     <>
         <nav className="navbar">
             <div className='navbar-container'>
-                 <div className='nav-title'>CHECKMATE</div>
+                 <div className='nav-title'>SQUARES</div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
                         <Link to='/' className='nav-links'>
